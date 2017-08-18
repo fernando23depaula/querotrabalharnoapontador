@@ -1,0 +1,96 @@
+$padrao_color : #ff8207;
+$padrao_color_text : #535353;
+$padrao_font_size 	: 16px;
+
+
+
+
+@font-face {
+	font-family: 'robotoregular';
+	src: url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+	src: url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+		url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+		url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+html{
+	*{
+		margin:0;
+		padding:0;
+		
+	}
+	
+	body{
+		
+		font-size : $padrao_font_size;
+		 font-family: 'robotoregular' !important;
+		.container{
+            padding:0 5px;
+            margin:0 auto;
+            display: block;
+            @media screen and (max-width:540px){
+                width: 100%;
+            }
+            @media screen and (max-width:768px){
+                width:740px;
+            }
+            @media screen and (max-width:992px){
+                width:890px;
+            }
+            @media screen and (max-width:1200px){
+                width: 1170px
+            }
+            @media screen and (min-width:1200px){
+                width:1200px;
+            }
+        }
+        .fLeft{
+            float:left;
+        } 
+        .fRight{
+            float:right;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .text.left{
+            text-align: left;
+        }
+        .display-block{
+            display:block;
+        }
+        .center-block{
+            display:block;
+            margin:0 auto;
+        }
+
+        .clearfix:before, .clearfix:after {
+            content: "";    
+            display: table;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+		.align_middle{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		p{
+			margin:0;
+			padding:0;
+		}
+        .invisivel{
+            display:none;
+        }
+        .visivel{
+            display:block;
+        }
+	}
+}
